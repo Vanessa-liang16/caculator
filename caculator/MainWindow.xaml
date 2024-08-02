@@ -1,0 +1,39 @@
+﻿<Window x:Class="caculator.MainWindow "
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:caculator"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Margin="0,0,0,0" Background="#FFCCB1B1">
+        <Button x:Name="btn1" Content="1" HorizontalAlignment="Left" Margin="64,125,0,0" VerticalAlignment="Top" Height="48" Width="54" ClickMode="Press" Click="btn1_Click"/>
+        <Button x:Name="btn2" Content="2" HorizontalAlignment="Left" Margin="131,125,0,0" VerticalAlignment="Top" Height="48" Width="53" ClickMode="Press" Click="btn2_Click"/>
+        <Button x:Name="insert" Content="insert" HorizontalAlignment="Left" Margin="438,58,0,0" VerticalAlignment="Top" Height="36" Width="147" Click="insert_Click"/>
+        <Button x:Name="btn3" Content="3" HorizontalAlignment="Left" Margin="199,125,0,0" VerticalAlignment="Top" Height="48" Width="53" Click="btn3_Click"/>
+        <Button x:Name="add" Content="+" HorizontalAlignment="Left" Margin="267,125,0,0" VerticalAlignment="Top" Height="48" Width="53" Click="add_Click"/>
+        <Button x:Name="btn4" Content="4" HorizontalAlignment="Left" Margin="65,0,0,0" VerticalAlignment="Center" Height="48" Width="53" Click="btn4_Click"/>
+        <Button x:Name="btn5" Content="5" HorizontalAlignment="Left" Margin="131,0,0,0" VerticalAlignment="Center" Height="48" Width="54" Click="btn5_Click"/>
+        <Button x:Name="btn6" Content="6" HorizontalAlignment="Left" Margin="199,0,0,0" VerticalAlignment="Center" Height="48" Width="53" Click="btn6_Click"/>
+        <Button x:Name="minus" Content="-" HorizontalAlignment="Left" Margin="267,0,0,0" VerticalAlignment="Center" Height="48" Width="53" Click="minus_Click"/>
+        <Button x:Name="btn7" Content="7" HorizontalAlignment="Left" Margin="65,256,0,0" VerticalAlignment="Top" Height="48" Width="53" Click="btn7_Click"/>
+        <Button x:Name="btn8" Content="8" HorizontalAlignment="Left" Margin="132,256,0,0" VerticalAlignment="Top" Height="48" Width="54" Click="btn8_Click"/>
+        <Button x:Name="btn9" Content="9" HorizontalAlignment="Left" Margin="199,256,0,0" VerticalAlignment="Top" Height="48" Width="53" Click="btn9_Click"/>
+        <Button x:Name="multiple" Content="*" HorizontalAlignment="Left" Margin="267,256,0,0" VerticalAlignment="Top" Height="48" Width="53" Click="multiple_Click"/>
+        <Button x:Name="btn0" Content="0" HorizontalAlignment="Left" Margin="65,323,0,0" VerticalAlignment="Top" Height="48" Width="53" Click="btn0_Click"/>
+        <Button x:Name="clear" Content="Clear" HorizontalAlignment="Left" Margin="133,323,0,0" VerticalAlignment="Top" Height="48" Width="53" Click="clear_Click"/>
+        <Button x:Name="equal" Content="=" HorizontalAlignment="Left" Margin="199,325,0,0" VerticalAlignment="Top" Height="48" Width="53" Click="equal_Click"/>
+        <Button x:Name="division" Content="/" HorizontalAlignment="Left" Margin="267,325,0,0" VerticalAlignment="Top" Height="48" Width="53" Click="division_Click"/>
+        <Button x:Name="query" Content="query" HorizontalAlignment="Left" Margin="602,58,0,0" VerticalAlignment="Top" Height="36" Width="147" Click="query_Click"/>
+        <Label x:Name="inputDisplay" Content="" HorizontalAlignment="Left" Margin="64,58,0,0" VerticalAlignment="Top" Width="256" Height="36" SnapsToDevicePixels="True" BorderThickness="0,5,0,0" Background="#FFF4F4F4"/>
+        <Label x:Name="preoderDisplay" Content="" HorizontalAlignment="Left" Margin="531,125,0,0" VerticalAlignment="Top" Width="218" Height="48" Background="White"/>
+        <Label x:Name="postoderDisplay" Content="" HorizontalAlignment="Left" Margin="531,0,0,0" VerticalAlignment="Center" Width="218" Height="48" Background="#FFFCF9F9"/>
+        <Label x:Name="decimalDisplay" Content="" HorizontalAlignment="Left" Margin="531,261,0,0" VerticalAlignment="Top" Width="218" Height="43" Background="#FFFCF9F9"/>
+        <Label x:Name="binaryDisplay" Content="" HorizontalAlignment="Left" Margin="531,330,0,0" VerticalAlignment="Top" Width="218" Height="43" Background="#FFFCF9F9"/>
+        <TextBlock HorizontalAlignment="Left" Margin="388,129,0,0" TextWrapping="Wrap" Text="Preoder" VerticalAlignment="Top" Height="44" Width="102" />
+        <TextBlock HorizontalAlignment="Left" Margin="388,197,0,0" TextWrapping="Wrap" Text="Postoder" VerticalAlignment="Top" Height="43" Width="124"/>
+        <TextBlock HorizontalAlignment="Left" Margin="388,261,0,0" TextWrapping="Wrap" Text="Decimal" VerticalAlignment="Top" Height="43" Width="124"/>
+        <TextBlock HorizontalAlignment="Left" Margin="388,330,0,0" TextWrapping="Wrap" Text="Binary" VerticalAlignment="Top" Height="43" Width="124"/>
+
+    </Grid>
+</Window>
